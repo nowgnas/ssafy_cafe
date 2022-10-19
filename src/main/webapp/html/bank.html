@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../js/my.js"></script>
+
+</head>
+<body>
+<article class="container">
+    <div class="page-header">
+        <div class="col-md-6 col-md-offset-3">
+            <h3>계좌 이체</h3>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-offset-3">
+        <form role="form">
+            <div class="form-group">
+                <label for="inputName">보내는 분 이름</label>
+                <input type="text" class="form-control" id="bank_name" value="홍길동">
+            </div>
+            <div class="form-group">
+                <label for="inputBank">은행</label>
+                <select name="bank" id="bank">
+                    <option value="KB">국민은행</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="InputAccount">계좌번호</label>
+                <input type="text" class="form-control" id="bank_accountNo" value="10-111-111">
+            </div>
+            <div class="form-group">
+                <label for="inputPrice">이체금액</label>
+                <input type="number" class="form-control" id="bank_price" placeholder="이체금액을 입력해주세요">
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <label for="inputName">받는 분 이름</label>
+                <input type="text" class="form-control" value="전은수" readonly="readonly">
+            </div>
+            <div class="form-group">
+                <label for="inputBank">은행</label>
+                <select name="bank">
+                    <option value="ShinHan">신한은행</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="InputAccount">계좌번호</label>
+                <input type="text" class="form-control" value="1234567-123-12" readonly="readonly">
+            </div>
+
+
+            <div class="form-group text-center">
+                <input type="button" id="bank_remitBtn" class="btn btn-primary"
+                       value="이체">
+                <button type="submit" class="btn btn-warning">
+                    취소<i class="fa fa-times spaceLeft"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+</article>
+</body>
+</html>
+
